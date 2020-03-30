@@ -1,16 +1,18 @@
 """Intracts with user and uses pycolor module to convert color codes
 """
-
+import sys #added by omid
 import argparse
 import pycolor.color as _pycolor
 
 #  using argparse package to handle the command line interface (CLI)
 #  https://docs.python.org/3.7/library/argparse.html
 
-parser = argparse.ArgumentParser(description='Converts color codes.')
+##Creatin argparse object 
+#
+parser = argparse.ArgumentParser(description='Converts color codes.') #description is optional
 
 parser.add_argument(
-    '--hex_to_hsv',
+    '--hex_to_hsv',  #name of argument
     action='store_true',
     help='converts hex to hsv')
 
